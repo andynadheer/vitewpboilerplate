@@ -1,0 +1,18 @@
+@use "sass:math";
+
+@function rem($values...) {
+  $base-font-size: 16;
+  $remValues: ();
+
+  @each $value in $values {
+    $unitless-value: strip-unit($value);
+    $remValue: math.div($unitless-value, $base-font-size) * 1rem;
+    $remValues: append($remValues, $remValue);
+  }
+
+  @return $remValues;
+}
+
+@function strip-unit($value) {
+  @return math.div($value, ($value * 0 + 1));
+}

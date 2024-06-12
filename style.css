@@ -1,0 +1,40 @@
+/*
+Theme Name: ViteWP
+Theme URI: #
+Author: Andy Nadheer
+Author URI: https://www.andynadheer.com/
+Description: Simple wordpress theme based on Vite Frontend
+Tags: blog, one-column, full-width-template
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: vitewp
+Copyright: 2024 Andy Nadheer
+Tested up to: 6.4.2
+Requires PHP: 5.6
+*/
+
+html {
+  max-width: 70ch;
+  padding: 3em 1em;
+  margin: auto;
+  line-height: 1.75;
+  font-size: 1.25em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 3em 0 1em;
+}
+
+p,
+ul,
+ol {
+  margin-bottom: 2em;
+  color: #1d1d1d;
+  font-family: sans-serif;
+}
